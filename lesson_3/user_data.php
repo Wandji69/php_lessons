@@ -2,15 +2,12 @@
 if (isset($_POST['submit'])) {
     $username = $_POST['fullname'];
     $email = $_POST['email'];
-    $dateOfBirth = $_POST['date'];
-    $gender = $_POST['gender'];
-    $country = $_POST['country'];
-
+    $password = $_POST['password'];
 
     registerUser($username, $email, $password);
 }
 
-function registerUser($username, $email, $dateOfBirth, $gender, $country)
+function registerUser($username, $email, $password)
 {
     //save data into the file
     $file_open = fopen("userdata.csv", "w");
@@ -22,9 +19,7 @@ function registerUser($username, $email, $dateOfBirth, $gender, $country)
         'sr_no' => $no_rows,
         'name' => $username,
         'email' => $email,
-        'dateOfBirth' => $dateOfBirth,
-        'gender' => $gender,
-        'country' => $country
+        'password' => $password
     );
 
     fputcsv($file_open, $form_data);
