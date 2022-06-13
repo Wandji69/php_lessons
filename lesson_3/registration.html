@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <form class="form-control w-50" method="POST" action="user_data.php">
+        <h1 class="form-group">Register</h1>
+        <hr>
+        <div class="form-row flex justify-content-center">
+            <div class="form-group">
+                <label for="fullname">Names</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Full Names" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date of Birth</label>
+                <input type="date" class="form-control" id="date" placeholder="Date of Birth" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select type="gender" class="form-control" id="gender" placeholder="Gender" name="gender" required>
+                    <option value="Male">M</option>
+                    <option value="Female">F</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="country" class="form-control" id="country" placeholder="Country" name="Country" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" name="submit">Register</button>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
