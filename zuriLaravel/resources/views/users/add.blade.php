@@ -43,7 +43,7 @@
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <span style="color:red;">*</span>Phone Number</label>
                         <input type="phone" class="form-control form-control-user @error('phone') is-invalid @enderror" id="examplePhone" placeholder="Phone Number" required name="phone Number" value="{{ old('phone') }}">
-                        @error('email')
+                        @error('phone')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
 
