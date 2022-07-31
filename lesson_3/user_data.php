@@ -24,6 +24,7 @@ function registerUser($username, $email, $password)
 
     fputcsv($file_open, $form_data);
 
+    fclose("userdata.csv");    
     // echo "OKAY";
 }
 echo "User Successfully registered";
