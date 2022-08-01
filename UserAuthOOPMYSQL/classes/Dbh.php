@@ -3,14 +3,14 @@
 class Dbh
 {
 
-    private function connect()
+    public function connect()
     {
         try {
             $username = "root";
             $password = "";
 
-            $dbh = new PDO('mysql:host=localhost;dbname=', $username, $password);
-            return $dbh;
+            $db = new PDO('mysql:host=localhost;dbname=', $username, $password);
+            return $db;
         } catch (PDOException $err) {
             print "Error: " . $err->getMessage() . "<br/>";
             die();
